@@ -1,0 +1,11 @@
+.ThumbContainer {
+    width: 340px;
+    height: 340px;
+    flex-shrink: 0;
+}
+
+.ThumbContainer_Tittle{
+    width: 340px;
+    height: 340px;
+    flex-shrink: 0;
+}
