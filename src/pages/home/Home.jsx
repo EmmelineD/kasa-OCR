@@ -1,8 +1,8 @@
 import "./Home.css";
-import Background from "../../images/Background.png";
 import Header from "../../components/Header/Header";
 import Thumb from "../../components/Thumb/Thumb";
 import Footer from "../../components/Footer/Footer";
+import Background from "../../images/Background.png";
 
 
 export default function Home() {
