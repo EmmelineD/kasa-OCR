@@ -4,11 +4,11 @@ import Carrousel from "../../components/Carrousel/Carrousel";
 import Footer from "../../components/Footer/Footer";
 
 
-export default function Home() {
+export default function Fiche_logement() {
     return (
         <>
             <div className="fiche_LogementContainer">
-                <Header/>
+               {/* <Header/>
                 <Carrousel/>
                 <h1>Title</h1>
                 <span>Location</span>
@@ -17,7 +17,7 @@ export default function Home() {
                 <span>rating</span>
                 <div className="fiche_LogementDescription"></div>
                 <div className="fiche_LogementEquipements"></div>
-                <Footer/>
+                <Footer/> */}
             </div>
             
         </>

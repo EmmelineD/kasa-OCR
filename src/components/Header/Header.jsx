@@ -1,15 +1,18 @@
 import "./Header.css";
-import Logo from "../../images/logo.png";
+import Logo from "../../images/Logo.png";
 import React from "react";
+import { Link } from 'react-router-dom';
 
-<div className="headerContainer">
-    <div className="headerContainer_Left">
-        <img className="headerContainer_Logo" src={Logo} alt="Kasa" />
-    </div>
-    <div className="headerContainer_Right">
-        <div className="headerContainer_Links">
-            <span className="headerContainer_Link">Acceuil</span>
-            <span className="headerContainer_Link">A Propos</span>
+export default function Header() {
+    return (
+        <div className="headerContainer">
+            <img className="headerContainer_Logo" src={Logo} alt="Kasa" />
+            <nav className="headerContainer_Links">
+                <Link to="/">Accueil - </Link>
+                <Link to="/A_Propos">A Propos - </Link>
+                <Link to="/Fiche_logement">Fiche Logement - </Link>
+                <Link to="/D_404">erreur - </Link>
+            </nav>
         </div>
-    </div>
-</div>
+    )
+}

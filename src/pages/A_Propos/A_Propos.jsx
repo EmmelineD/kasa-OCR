@@ -5,17 +5,18 @@ import Dropdown from "../../components/Dropdown/Dropdown";
 import Background from "../../images/Background.png";
 
 
-export default function Home() {
+export default function A_Propos() {
     return (
         <>
-            <div className="404Container">
-                <Header/>
+            <div className="A_ProposContainer">
+                <h1>A Propos</h1>
+                {/*<Header/>
                 <div className="homeBackground">
                     <img className="Background" src={Background} alt="sea and cliff" />
                 </div>
                 <Dropdown/>
+                <Footer/> */}
                 {/* use the Usestate to add the right tittle/description in the Dropdown component */}
-                <Footer/>
             </div>
             
         </>
