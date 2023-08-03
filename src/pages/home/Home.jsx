@@ -1,6 +1,5 @@
 import "./Home.css";
 import Thumb from "../../components/Thumb/Thumb";
-import Footer from "../../components/Footer/Footer";
 import Background from "../../images/Background.png";
 
 

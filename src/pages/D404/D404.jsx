@@ -1,7 +1,4 @@
-import "./D_404.css";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
-
+import "./D404.css";
 
 export default function D_404() {
     return (

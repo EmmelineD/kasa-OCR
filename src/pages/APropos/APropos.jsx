@@ -1,4 +1,4 @@
-import "./A_Propos.css";
+import "./APropos.css";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import Dropdown from "../../components/Dropdown/Dropdown";
@@ -8,7 +8,7 @@ import Background from "../../images/Background.png";
 export default function A_Propos() {
     return (
         <>
-            <div className="A_ProposContainer">
+            <div className="AProposContainer">
                 <h1>A Propos</h1>
                 {/*<Header/>
                 <div className="homeBackground">
