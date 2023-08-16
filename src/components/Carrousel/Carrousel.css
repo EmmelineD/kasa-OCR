@@ -1,5 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+    line-height: 1.15;
+    
+}
+
+
+body {
+    width: 90%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
 .slideshow {
-    margin: 0 auto;
+    max-width: 1440px;
+    margin: 5%;
     overflow: hidden;
     max-width: 100%;
 }

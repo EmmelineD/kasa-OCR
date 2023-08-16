@@ -22,7 +22,7 @@ body {
 
 .headerContainer{
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 2%;
     display: flex;
     justify-content: space-between;
 }
@@ -38,6 +38,7 @@ body {
     text-decoration-line: none;
     margin:auto;
     padding: 2%;
+    text-wrap: nowrap;
 }
 
 .headerContainerLink:hover {

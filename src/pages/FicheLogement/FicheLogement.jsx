@@ -1,15 +1,15 @@
 import "./FicheLogement.css";
-import Header from "../../components/Header/Header";
 import Carrousel from "../../components/Carrousel/Carrousel";
-import Footer from "../../components/Footer/Footer";
+import {Logements} from "../../logementsData.js";
 
 
-export default function Fiche_logement() {
+
+export default function Fiche_logement({post}) {
     return (
         <>
             <div className="ficheLogementContainer">
                 <Carrousel/>
-                <h1>Title</h1>
+                <h1>Title{/*{Logements.filter(l=>l.id === post.logementId)[0].title}*/}</h1>
                 <span>Location</span>
                 <span>host</span>
                 <image>hostPicture</image>

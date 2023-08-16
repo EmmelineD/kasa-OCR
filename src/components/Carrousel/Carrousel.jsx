@@ -1,9 +1,10 @@
 
 import "./Carrousel.css";
 import React from "react";
+import {Logements} from "../../logements.json";
 
 const colors = ["#0088FE", "#00C49F", "#FFBB28"];
-const delay = 10000;
+const delay = 5000;
 
 export default function Carrousel() {
   const [index, setIndex] = React.useState(0);
