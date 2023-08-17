@@ -1,5 +1,10 @@
 import "./FicheLogement.css";
+import list from '../../logements.json';
+import { useParams, Navigate } from 'react-router-dom'
 import Carrousel from "../../components/Carrousel/Carrousel";
+import Dropdown from "../../components/Dropdown/Dropdown";
+import Tag from '../../components/Tag/Tag.jsx';
+import Rating from '../../components/Rating/Rating.jsx';
 
 
 
