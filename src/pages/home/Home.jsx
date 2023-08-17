@@ -1,20 +1,28 @@
 import "./Home.css";
 import Thumb from "../../components/Thumb/Thumb";
-import Background from "../../images/Background.png";
+import list from '../../logements.json';
 
 
 export default function Home() {
     return (
         <>
-            <div className="homeContainer">
+            <main className="homeContainer">
                 <div className="homeBackground">
-                    <img className="Background" src={Background} alt="sea and cliff" />
-                    <h1>Chez vous, partout et ailleurs</h1>
+                    <div className="Background">
+                        <h1>Chez vous, partout et ailleurs</h1>
+                    </div>
                 </div>
-                <div className="homeGallery">
-                    <Thumb/>
-                </div>
-            </div>
+                <article className ="HomeThumbContainer">
+                    <ul className ="ThumbList">
+                        {/* Thumb element is created for each accommodation */}
+                        {list.map(({id, cover, title}) => ( 
+                            <li key={id} > 
+                                <Thumb id = {id} cover = {cover} title = {title} /> 
+                            </li>  
+                        ))}
+                    </ul>
+                </article>
+            </main>
             
         </>
     )

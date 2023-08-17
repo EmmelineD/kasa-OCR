@@ -1,25 +1,94 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+.homeContainer{
+    max-width: 1500px;
+    margin:0 auto;
 }
 
-html {
-    line-height: 1.15;
-    
-}
-
-
-body {
-    width: 90%;
-    font-family: 'Montserrat', sans-serif;
+.homeBackground{
+    height:225px;
+    background-image: url('../../images/Background.png');
+    background-size:cover;
+    background-position:center;
+    border-radius: 25px;
+    margin:50px;
 }
 
 .Background{
-    max-width: 1440px;
-    margin: 5%;
-    max-width: 100%;
-    border-radius: 40px;
+    display:grid;
+    justify-content: center;
+    height:100%;
+    align-items:center;
+    font-size:1.5rem;
+    color: rgba(255,255,255,1);
+    font-weight:500;
+    background-color:rgba(0,0,0,0.3);
+    border-radius:25px;
+}
+
+.HomeThumbContainer{
+    margin:50px;
+}
+
+.ThumbList{
+   grid-template-columns:1fr 1fr 1fr;
+   display:grid;
+    flex-wrap:wrap;
+    justify-content: center;
+    padding-left:0px;
+    background-color: #F6F6F6;
+    border-radius:25px;
+    gap:40px; 
+    padding:30px 30px 30px 30px; 
+}
+
+li{
+    list-style: none;
+    width:100%;
+}
+
+@media (max-width :991px) {
+    .accomodation_items{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+
+    .banner_title{
+        text-align: center;
+        padding:20px;
+    }
+}
+ 
+@media (max-width :767px) {
+  
+     .accomodation_items{
+        grid-template-columns: 1fr ;
+        background-color: #FFFFFF;
+        padding:0px;
+    }
+     .accomodation_container{
+        margin:20px;
+    }
+ 
+    .banner{
+        margin:20px;
+        height:auto;
+        min-height:110px;
+        max-height:150px;
+        border-radius:10px;
+    }
+
+    .banner_cover{
+        justify-content: flex-start;
+        border-radius:10px;
+        height:100%;
+        max-height:150px;
+        min-height:111px;
+    }
+    .banner_title{
+        text-align: left;
+        font-weight: 500;
+        padding:0 8px;
+        font-size: 2.5rem;
+    }
+
+
 }
