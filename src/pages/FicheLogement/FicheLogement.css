@@ -1,18 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+.accommodationContainer{
+  max-width: 1500px;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  flex-grow:1;
+  justify-content: flex-start;
 }
 
-html {
-    line-height: 1.15;
-    
+.accomodationTitle, .hostName, .accomodationLocation{
+ color:rgba(255, 96, 96, 1);
+ font-weight: 500;
 }
 
+.accomodationTitle{
+  font-size:2.2rem;
+  margin:0 0 10px 0;
+  padding-right:8px;
+}
 
-body {
-    width: 90%;
-    font-family: 'Montserrat', sans-serif;
+.hostName, .accomodationLocation {
+ font-size:1.125rem;
+}
+
+.accomodationLocation {
+ margin-bottom:25px;
+}
+
+.accomodationDetails{
+  display :flex;
+  justify-content: space-between;
+  align-items:flex-end;
+  margin:30px 50px 0 50px;
+}
+
+.tagsContainer{
+ display:flex;
+ flex-wrap:wrap;
+}
+
+.host{
+  display:flex;
+  align-items: center;
+  width:160px;
+}
+
+.hostPicture{
+  border-radius:50px;
+  height:64px;
+  width:64px;
+  margin-left:10px;
+}
+
+.hostRatingContainer{
+ display:flex;
+ flex-direction: column;
+ align-items: flex-end;
+}
+
+.accommodationDropdownTitle{
+ font-size: 1.3rem;
+ height:10%;
+}
+
+.equipmentContainer, .accomodationDescription {
+ font-size: 1.3rem;
+ line-height: 1.5;
+ padding-left:0;
+ margin-top: 0;
+}
+
+.accomodationEquipmentsList{
+ margin: 2px 0 0 0;
+ 
+}
+.dropdownContainer{
+  display:flex;
+  justify-content: space-between;
+  gap:90px;
+  margin: 0px 50px 30px 50px;
+}
+
+.dropdownEquipment, .dropdownDescription{
+  width:50%;
 }
