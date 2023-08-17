@@ -4,21 +4,21 @@ import GreyStar from "../../images/GreyStar.png";
 
 
 export default function Rating(ratingNumber) {
-    // Initialiser un tableau vide pour stocker les étoiles de notation
+    // Add a table for rating
     const ratingStar =[]
-    // Ajouter les étoiles rouges dans le tableau en fonction de la note donnée
+    // Add red star for the rating
     for (let i = 0; i <ratingNumber; i++) {
         ratingStar.push(
             <img src={RedStar} alt={`${ratingNumber} étoiles`} key={`red-star-${i}`}/>
         )
     }
-    // Ajouter les étoiles grises restantes pour avoir 5 étoiles au total
+    // add grey star for add 5 star
     for (let i=0; i <5-ratingNumber; i++){
         ratingStar.push(
             <img src={GreyStar} alt={`${ratingNumber} étoiles`} key={`grey-star-${i}`} />  
         )
     }
-    // Afficher les étoiles de notation
+    // Show stars
     return (
         <div className="starsContainer">
             {ratingStar}
