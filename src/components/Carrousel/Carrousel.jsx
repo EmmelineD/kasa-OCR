@@ -1,50 +1,58 @@
 
 import "./Carrousel.css";
 import React from "react";
-import {Logements} from "../../logements.json";
+import arrowLeft from '../../images/arrowLeft.png';
+import arrowRight from '../../images/arrowRight.png';
 
-const colors = ["#0088FE", "#00C49F", "#FFBB28"];
-const delay = 5000;
 
-export default function Carrousel() {
+export default function Carrousel({picture, pictures}) {
   const [index, setIndex] = React.useState(0);
-  const timeoutRef = React.useRef(null);
 
-  function resetTimeout() {
-    if (timeoutRef.current) {
-      clearTimeout(timeoutRef.current);
-    }
+  // previous picture
+  const prevImg = (index) => {
+    index > 0 ? setIndex(index - 1) : setIndex((picture.lenth - 1))
   }
 
-  React.useEffect(() => {
-    resetTimeout();
-    timeoutRef.current = setTimeout(
-      () =>
-        setIndex((prevIndex) =>
-          prevIndex === colors.length - 1 ? 0 : prevIndex + 1
-        ),
-      delay
-    );
-
-    return () => {
-      resetTimeout();
-    };
-  }, [index]);
+  // next picture
+  const nextImg = (index) => {
+    index < pictures - 1 ? setIndex(index + 1) : setIndex(0)
+  }
 
   return (
     <div className="slideshow">
-      <div
-        className="slideshowSlider"
-        style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
-      >
-        {colors.map((backgroundColor, index) => (
-          <div
-            className="slide"
-            key={index}
-            style={{ backgroundColor }}
-          ></div>
-        ))}
-      </div>
+      <img className= "slideshowSlider"
+        src={pictures[index]}
+        alt="accommodation pictures"
+        key={`slideshow-${index}`}
+      />
+
+      {/* If only one picture */}
+      {pictures > 1 && (
+        <>
+          <div className="arrow_container">
+            {/* previous picture button */}
+            <button onClick={() => prevImg(index)}>
+              <img
+                className="arrow_left"
+                src={arrowLeft}
+                alt="flèche vers la gauche"
+              />
+            </button>
+            {/* next picture button */}
+            <button onClick={() => nextImg(index)}>
+              <img
+                className="arrow_right"
+                src={arrowRight}
+                alt="flèche vers la droite"
+              />
+            </button>
+          </div>
+          {/* picture number */}
+          <p className="carrousel_number">
+            {index + 1} / {pictures}
+          </p>
+        </>
+      )}
     </div>
-  );
+  )
 }

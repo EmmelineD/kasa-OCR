@@ -1,28 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html {
-    line-height: 1.15;
-    
-}
-
-
-body {
-    width: 90%;
-    font-family: 'Montserrat', sans-serif;
-}
-
-
-
-
 .headerContainer{
-    max-width: 1440px;
-    margin: 2%;
+    max-width: 90%;
+    margin: 5%;
     display: flex;
     justify-content: space-between;
 }
@@ -38,7 +16,7 @@ body {
     text-decoration-line: none;
     margin:auto;
     padding: 2%;
-    text-wrap: nowrap;
+    white-space: nowrap;
 }
 
 .headerContainerLink:hover {

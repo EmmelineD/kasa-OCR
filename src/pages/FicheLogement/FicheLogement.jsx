@@ -1,10 +1,9 @@
 import "./FicheLogement.css";
 import Carrousel from "../../components/Carrousel/Carrousel";
-import {Logements} from "../../logementsData.js";
 
 
 
-export default function Fiche_logement({post}) {
+export default function Fiche_logement() {
     return (
         <>
             <div className="ficheLogementContainer">

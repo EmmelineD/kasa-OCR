@@ -1,6 +1,7 @@
 import React from 'react';
 import {createRoot} from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './index.css';
 import Home from './pages/Home/Home';
 import D404 from './pages/D404/D404';
 import APropos from './pages/APropos/APropos';
