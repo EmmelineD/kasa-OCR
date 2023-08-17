@@ -1,0 +1,6 @@
+.starsContainer{
+    display:flex;
+    justify-content: space-between;
+    width:160px;
+    margin-top:20px;
+}
