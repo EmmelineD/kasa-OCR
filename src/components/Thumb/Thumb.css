@@ -1,11 +1,42 @@
-.ThumbContainer {
-    width: 340px;
-    height: 340px;
-    flex-shrink: 0;
+.ThumbContainer{
+    margin:50px;
+    list-style: none;
+    height:340px;
+    position:relative;
+    border-radius:10px;
 }
 
-.ThumbContainer_Tittle{
-    width: 340px;
-    height: 340px;
-    flex-shrink: 0;
+.ThumbContainerTitle{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color:rgba(255,255,255,1);
+    position:absolute;
+    bottom:0;
+    margin:15px 10px;
+}
+
+.ThumbContainerImg{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:10px;
+    transition: all 0.5s;
+}
+
+.ThumbContainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius:10px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    transition: all 0.3s;
+    pointer-events: none
+}
+
+.ThumbContainer:hover::before {
+    opacity: 0;
+    cursor:pointer;
 }

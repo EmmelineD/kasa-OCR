@@ -1,11 +1,13 @@
 import "./Thumb.css";
-import React from "react";
+import { Link } from 'react-router-dom'
 
-export default function Thumb() {
+export default function Thumb({id,cover,title}) {
     return (
         <div className="ThumbContainer">
-            <div className="ThumbContainer_Image"></div>
-            <div className="ThumbContainer_Tittle"></div>
+            <Link  to={`/fiche-logement/${id}`}>
+                <img className="ThumbContainerImg" src={cover} alt={title} />
+                <h2 className="ThumbContainerTitle"> {title} </h2>
+            </Link>
         </div>
     )
     }
