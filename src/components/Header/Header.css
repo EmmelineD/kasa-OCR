@@ -1,8 +1,14 @@
 .headerContainer{
-    max-width: 90%;
-    margin: 5%;
+    max-width: 100%;
     display: flex;
+    padding-top: 40px;
     justify-content: space-between;
+    margin: 0 100px;
+}
+
+.headerContainerLogo {
+  width: 210px;
+  height: 68px;
 }
 
 .headerContainerLinks {

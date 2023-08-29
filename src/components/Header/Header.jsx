@@ -9,8 +9,9 @@ export default function Header() {
             <img className="headerContainerLogo" src={Logo} alt="Kasa" />
             <nav className="headerContainerLinks">
                 <Link className="headerContainerLink" to="/">Accueil</Link>
-                <Link className="headerContainerLink" to="/APropos">A Propos</Link>
-                <Link className="headerContainerLink" to="/D404">erreur</Link>
+                <Link className="headerContainerLink" to="/A-propos">A Propos</Link>
+                <Link className="headerContainerLink" to="/D-404">erreur</Link>
+                <Link className="headerContainerLink" to="/Fiche-logement">logement</Link>
             </nav>
         </div>
     )

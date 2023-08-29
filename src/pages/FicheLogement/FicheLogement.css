@@ -7,79 +7,36 @@
   justify-content: flex-start;
 }
 
-.accomodationTitle, .hostName, .accomodationLocation{
- color:rgba(255, 96, 96, 1);
- font-weight: 500;
+.accommodationContainerTop{
+  justify-content: space-between;
+  display: flex;
+  margin: 24px 100px 0 100px;
 }
 
-.accomodationTitle{
-  font-size:2.2rem;
-  margin:0 0 10px 0;
-  padding-right:8px;
+.accommodationContainerTopLeft{
+  margin-top: 6px;
 }
 
-.hostName, .accomodationLocation {
- font-size:1.125rem;
+.accomodationTitle {
+  font-size: 36px;
+  color: #FF6060;
+  font-weight: 500;
+  line-height: 142.6%;
+  align-items: flex-end;
 }
 
 .accomodationLocation {
- margin-bottom:25px;
+  color: #FF6060;
+  font-size: 18px;
+  font-weight: 500;
+  align-items: flex-end;
+  line-height: 142.6%;
 }
 
-.accomodationDetails{
-  display :flex;
-  justify-content: space-between;
-  align-items:flex-end;
-  margin:30px 50px 0 50px;
-}
-
-.tagsContainer{
- display:flex;
- flex-wrap:wrap;
-}
-
-.host{
-  display:flex;
+.tagsContainer {
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
-  width:160px;
-}
-
-.hostPicture{
-  border-radius:50px;
-  height:64px;
-  width:64px;
-  margin-left:10px;
-}
-
-.hostRatingContainer{
- display:flex;
- flex-direction: column;
- align-items: flex-end;
-}
-
-.accommodationDropdownTitle{
- font-size: 1.3rem;
- height:10%;
-}
-
-.equipmentContainer, .accomodationDescription {
- font-size: 1.3rem;
- line-height: 1.5;
- padding-left:0;
- margin-top: 0;
-}
-
-.accomodationEquipmentsList{
- margin: 2px 0 0 0;
- 
-}
-.dropdownContainer{
-  display:flex;
-  justify-content: space-between;
-  gap:90px;
-  margin: 0px 50px 30px 50px;
-}
-
-.dropdownEquipment, .dropdownDescription{
-  width:50%;
+  margin: 20px 0 24px 0;
+  color: #FFFFFF;
 }

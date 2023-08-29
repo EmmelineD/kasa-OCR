@@ -1,58 +1,38 @@
 
 import "./Carrousel.css";
 import React from "react";
+import { useState } from "react";
 import arrowLeft from '../../images/arrowLeft.png';
 import arrowRight from '../../images/arrowRight.png';
 
 
-export default function Carrousel({picture, pictures}) {
-  const [index, setIndex] = React.useState(0);
+export default function Carrousel({images}) {
 
-  // previous picture
-  const prevImg = (index) => {
-    index > 0 ? setIndex(index - 1) : setIndex((picture.lenth - 1))
-  }
 
-  // next picture
-  const nextImg = (index) => {
-    index < pictures - 1 ? setIndex(index + 1) : setIndex(0)
-  }
+   //Création des constantes pour définir le nombre d'images, et la navigation entre les images
 
-  return (
-    <div className="slideshow">
-      <img className= "slideshowSlider"
-        src={pictures[index]}
-        alt="accommodation pictures"
-        key={`slideshow-${index}`}
-      />
+   const [index, setIndex] = useState(0) //Constante avec un hook useState pour écouter les changements
+   const length = images.length //Constante pour avoir le nombre de logements
 
-      {/* If only one picture */}
-      {pictures > 1 && (
-        <>
-          <div className="arrow_container">
-            {/* previous picture button */}
-            <button onClick={() => prevImg(index)}>
-              <img
-                className="arrow_left"
-                src={arrowLeft}
-                alt="flèche vers la gauche"
-              />
-            </button>
-            {/* next picture button */}
-            <button onClick={() => nextImg(index)}>
-              <img
-                className="arrow_right"
-                src={arrowRight}
-                alt="flèche vers la droite"
-              />
-            </button>
-          </div>
-          {/* picture number */}
-          <p className="carrousel_number">
-            {index + 1} / {pictures}
-          </p>
-        </>
-      )}
-    </div>
-  )
+   //Fonction pour passer à l'image suivante
+   const nextSlide = () => {
+       setIndex(index === length -1 ? 0 : index + 1)
+   }
+   //Fonction pour passer à l'image précédente
+   const previewSlide = () => {
+       setIndex(index === 0 ? length -1 : index -1)
+   }
+
+   return (
+       <section className="slideContainer">
+           <div className="slide">
+               <img className="slideImage" src={images[index]} alt={images.title} key={images.id} />
+                   <img className="arrowLeft" src={arrowLeft} onClick={previewSlide} alt="Left Arrow" />
+                   <img className="arrowRight" src={arrowRight} onClick={nextSlide} alt="Right Arrow" />
+           </div>
+               <div className="indexInfo">
+                   {index + 1}/{images.length}
+               </div>
+       </section>
+   );
 }
