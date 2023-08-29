@@ -3,10 +3,8 @@ import "./Tag.css";
 export default function Tag({tagName}) {
 
     return (
-        <div className="tags"> 
-        <span className="tag">
+        <div className="tags">
             {tagName}
-        </span>
         </div>
     )
 

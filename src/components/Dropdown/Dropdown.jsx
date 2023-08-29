@@ -2,7 +2,7 @@ import styles from './Dropdown.css'
 import { useState } from "react"
 import arrow from '../../images/arrow_close.png'
 
-function Collapse({collapseTitle , collapseDescription}){
+export default function Dropdown({DropdownTitle , DropdownDescription}){
     const [isOpen, setIsOpen] = useState(false)
 
     const handleClick = ()=>{
@@ -12,19 +12,17 @@ function Collapse({collapseTitle , collapseDescription}){
 
     return(
         <div className={styles.collapse_container}>
-            <div  onClick={handleClick} className={isOpen ?`${styles.collapse_title_open}`:`${styles.collapse_title_closed}` }>
-                {collapseTitle}
+            <div  onClick={handleClick} className={isOpen ?`${"DropdownTitleOpen"}`:`${"DropdownTitleClosed"}` }>
+                {DropdownTitle}
                 <img  src = {arrow} className={isOpen ?`${styles.arrow_up}`:`${styles.arrow_down}`}
                 alt='ouvrir ou fermer la section' />
             </div>
              {/* Display description only if isOpen is true */}
             {isOpen && (
                 <div className={styles.collapse_description}>
-                    <div>{collapseDescription}</div>
+                    <div>{DropdownDescription}</div>
                 </div>
             )}
         </div>
     )
 }
-
-export default Collapse

@@ -33,10 +33,19 @@
   line-height: 142.6%;
 }
 
-.tagsContainer {
+.Tag {
+  background-color: #FF6060;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  margin: 20px 0 24px 0;
-  color: #FFFFFF;
+  text-align: center;
+  width: 58px;
+  height: 25px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 142.6%;
+  margin-right: 10px;
+  border-radius: 10px;
+  padding: 3px 30px;
+  white-space: nowrap;
 }
