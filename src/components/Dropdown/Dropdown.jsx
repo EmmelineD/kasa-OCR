@@ -2,7 +2,7 @@ import './Dropdown.css';
 import { useState } from "react";
 import arrow from '../../images/arrow_close.png';
 
-export default function Dropdown({DropdownTitle , DropdownDescription}){
+export default function Dropdown({DropdownTitle,DropdownDescription}){
     const [isOpen, setIsOpen] = useState(false)
 
     const handleClick = ()=>{
