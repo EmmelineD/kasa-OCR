@@ -23,20 +23,21 @@ export default function FicheLogement() {
                     <div className="accommodationContainerTopLeft">
                         <h1 className="accomodationTitle">{accommodation.title}</h1>
                         <p className="accomodationLocation">{accommodation.location}</p>
-                        {/* Tags du logement */}
                         <Tag key={accommodation.tags} title="Tags" tagName={accommodation.tags.map((tags,index) => (
                             <div className ="Tag" key={`${accommodation.tags}-${index}`}>{tags}</div>
                         ))} />
                     </div>
                     <div className="accommodationContainerTopRight">
-                        <div className="hostName">
-                            {accommodation.host.name}
-                        </div>
-                        <div className="hostPicture">
-                            <img src={accommodation.host.picture} alt="profil du propriétaire" />
+                        <div className="hostInformations">
+                            <div className="hostName">
+                                {accommodation.host.name}
+                            </div>
+                            <div className="hostPicture">
+                                <img className="hostImage" src={accommodation.host.picture} alt="profil du propriétaire" />
+                            </div>
                         </div>
                         <div className="ratingContainer">
-                            <Rating key={accommodation.rating} title="note" text={accommodation.rating} />
+                            <Rating key={accommodation.rating} title="Note"/>
                         </div>
                     </div>
                 </div>

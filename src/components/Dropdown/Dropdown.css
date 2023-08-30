@@ -1,0 +1,62 @@
+.DropdownContainer{
+    height:100%;
+}
+
+.DropdownTitleOpen{
+    background-color: rgba(255, 96, 96, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 30px auto 0px auto;
+    padding:10px 15px;
+    border-radius:5px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.DropdownTitleOpen:hover{
+    cursor: pointer;
+}
+
+.DropdownTitleClosed{
+    background-color: rgba(255, 96, 96, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 30px auto 0px auto;
+    padding:10px 15px;
+    border-radius:5px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.DropdownTitleClosed:hover{
+    cursor: pointer;
+    box-shadow: 2px 3px 10px rgba(200, 96, 96, 1);
+    transition:0.3s;
+}
+
+.DropdownDescription{
+    background: rgba(246, 246, 246, 1);
+    color: rgba(255, 96, 96, 1);
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: 0px auto;
+    padding:20px 15px 15px 15px;
+    border-radius:0 0 5px 5px;
+    display:flex;
+    justify-content:space-between;
+    box-sizing:border-box;
+    height:90%;
+}
+
+.ArrowUp{
+    transition:transform 0.3s;
+}
+
+.ArrowDown{
+    transform:rotate(180deg);
+    transition:transform 0.3s;
+}

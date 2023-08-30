@@ -1,6 +1,12 @@
-.starsContainer{
+.rating{
     display:flex;
     justify-content: space-between;
     width:160px;
     margin-top:20px;
+}
+
+.ratingStars{
+    padding: 2px 0 2px 7px;
+    height: 30px;
+    width: 30px;
 }
