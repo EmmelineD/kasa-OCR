@@ -37,16 +37,14 @@ export default function FicheLogement() {
                             </div>
                         </div>
                         <div className="ratingContainer">
-                            <Rating key={accommodation.rating} title="Note"/>
+                            <Rating rating={accommodation.rating} title="Note"/>
                         </div>
                     </div>
                 </div>
                 <div className="DropdownContainer">
-                    <Dropdown key={accommodation.description} title="Description" text={accommodation.description} />
-                    <Dropdown key={accommodation.equipments} title="Equipments" text={accommodation.equipments.map((infos, index) => (
-                        <div key={`${accommodation.equipments}-${index}`}>{infos}</div>
-                        ))}
-                    />
+                    <Dropdown key={accommodation.description} title="Description" array={[accommodation.description]} />
+                    <Dropdown key={accommodation.equipments} title="Equipments" array={accommodation.equipments}/>
+
                 </div>
             </div>
         ) : ( <Navigate replace to="/d-404" /> // If the accomodation doesn't exist, redirect to error page
