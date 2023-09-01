@@ -1,6 +1,5 @@
 import "./APropos.css";
 import Dropdown from "../../components/Dropdown/Dropdown";
-import Background from "../../images/background2.png";
 
 
 export default function A_Propos() {
