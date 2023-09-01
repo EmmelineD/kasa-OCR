@@ -1,0 +1,22 @@
+.aPrposContainer{
+    max-width: 1500px;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    flex-grow:1;
+    justify-content: flex-start;
+}
+
+.aProposBackground{
+    height:225px;
+    background-image: url('../../images/background2.png');
+    background-size:cover;
+    background-position:center;
+    border-radius: 25px;
+    margin:0px 50px;
+}
+
+.aProposDropdown{
+    width:80%;
+    margin:0 auto;
+}
