@@ -1,6 +1,5 @@
 import "./Thumb.css";
-import { Link } from 'react-router-dom'
-
+import {Link} from 'react-router-dom';
 
 export default function Thumb({id,cover,title}) {
 
