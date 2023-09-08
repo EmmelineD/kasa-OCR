@@ -9,8 +9,6 @@ export default function Dropdown({title,array}){
          // Inversion of the value of isOpen
         setIsOpen(!isOpen)
     }
-    console.log({title})
-
 
     return(
         <div className="DropdownContainer">
@@ -21,11 +19,9 @@ export default function Dropdown({title,array}){
             </div>
              {/* Display description only if isOpen is true */}
             {isOpen && (
-                <div className="DropdownDescription">
-                    <div>{array?.map((text, index) => (
-                        <div key={index}>{text}</div>
-                        ))}</div>
-                </div>
+                <div className="DropdownDescription">{array?.map((text, index) => (
+                    <div key={index}>{text}</div>
+                    ))}</div>
             )}
         </div>
     )

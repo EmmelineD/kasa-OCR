@@ -10,7 +10,6 @@ export default function Header() {
             <nav className="headerContainerLinks">
                 <Link className="headerContainerLink" to="/">Accueil</Link>
                 <Link className="headerContainerLink" to="/A-propos">A Propos</Link>
-                <Link className="headerContainerLink" to="/D-404">erreur</Link>
             </nav>
         </div>
     )

@@ -39,7 +39,7 @@ export default function FicheLogement() {
                         </div>
                     </div>
                 </div>
-                <div className="DropdownContainer">
+                <div className="accommodationDropdownContainer">
                     <Dropdown key={accommodation.description} title="Description" array={[accommodation.description]} />
                     <Dropdown key={accommodation.equipments} title="Equipments" array={accommodation.equipments}/>
 

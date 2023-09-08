@@ -1,6 +1,5 @@
 .DropdownContainer{
     height:100%;
-    display: flex;
 }
 
 .DropdownTitleOpen{
@@ -47,8 +46,6 @@
     margin: 0px auto;
     padding:20px 15px 15px 15px;
     border-radius:0 0 5px 5px;
-    display:flex;
-    justify-content:space-between;
     box-sizing:border-box;
     height:90%;
 }
@@ -60,4 +57,19 @@
 .ArrowDown{
     transform:rotate(180deg);
     transition:transform 0.3s;
+}
+
+@media (max-width :768px){
+    .DropdownDescription, .DropdownTitleOpen, .DropdownTitleClosed{
+    font-size: 1.5rem;
+    }
+    .ArrowUp{
+        width:18px;
+        height:auto;
+    }
+    .ArrowDown{
+        width:18px;
+        height:auto;
+       
+    }
 }
