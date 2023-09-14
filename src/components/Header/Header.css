@@ -1,18 +1,22 @@
 .headerContainer{
+    font-family: 'Montserrat', sans-serif;
     max-width: 100%;
     display: flex;
-    padding-top: 40px;
     justify-content: space-between;
-    margin: 0 100px;
+    margin-top:2%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .headerContainerLogo {
-  width: 210px;
-  height: 68px;
+  width: 15%;
+  height: 25%;
 }
 
 .headerContainerLinks {
     display: flex;
+    justify-content: space-between;
+
 }
 
 .headerContainerLink {
@@ -21,10 +25,21 @@
     font-style: normal;
     text-decoration-line: none;
     margin:auto;
-    padding: 2%;
+    padding: 5%;
     white-space: nowrap;
 }
 
 .headerContainerLink:hover {
     text-decoration-line: underline;
 }
+
+@media (max-width:767px) {
+    .headerContainerLogo {
+        width: 50%;
+        height: 50%;
+      }
+  }
+  
+  @media (max-width:350px) {
+
+  }
