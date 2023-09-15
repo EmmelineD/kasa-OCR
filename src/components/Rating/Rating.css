@@ -1,12 +1,24 @@
 .rating{
     display:flex;
-    justify-content: space-between;
-    width:160px;
-    margin-top:20px;
+    justify-content: flex-end;
+    margin-top:15%;
 }
 
 .ratingStars{
-    padding: 2px 0 2px 7px;
-    height: 30px;
-    width: 30px;
+    padding: 3%;
+    height: 150%;
+    width: 100%;
+}
+
+@media (max-width:767px){
+
+    .rating{
+        justify-content: flex-start;
+        margin-top:0%;
+    }
+
+    .ratingStars{
+        padding: 1%;
+        height: 100%;
+    }
 }

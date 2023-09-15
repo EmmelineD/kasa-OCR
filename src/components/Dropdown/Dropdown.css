@@ -1,5 +1,6 @@
 .Dropdown{
     height:100%;
+    width: 45%;
 }
 
 .DropdownTitleOpen{
@@ -30,8 +31,6 @@
     display:flex;
     justify-content:space-between;
     align-items: center;
-    width: 500px;
-    
 }
 
 .DropdownTitleClosed:hover{
@@ -62,6 +61,11 @@
 }
 
 @media (max-width :768px){
+
+    .Dropdown{
+        width: 100%;
+    }
+    
     .DropdownDescription, .DropdownTitleOpen, .DropdownTitleClosed{
     font-size: 1.5rem;
     }

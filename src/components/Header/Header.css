@@ -35,16 +35,20 @@
 }
 
 @media (max-width:767px) {
+
+    .headerContainer{
+        align-items: flex-end;
+    }
     .headerContainerLogo {
-        width: 30%;
+        width: 40%;
         height: 30%;
     }
 
     .headerContainerLinks{
         width:50%;
     }
-  }
-  
-  @media (max-width:350px) {
 
+    .headerContainerLink{
+        font-size: 18px;
+    }
   }

@@ -39,6 +39,8 @@ h1{
     display:grid;
     background-color: #F6F6F6;
     border-radius:25px;
+    padding-top:1%;
+    padding-bottom:1%;
 }
 
 li{

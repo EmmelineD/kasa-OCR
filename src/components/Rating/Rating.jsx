@@ -3,7 +3,7 @@ import RedStar from "../../images/RedStar.png";
 import GreyStar from "../../images/GreyStar.png";
 
 
-export default function Rating({rating,title}) {
+export default function Rating({rating}) {
     const scaleRating = rating
 
     //A table is created to add a variable [s], to match the rating of the establishment with the rating in the table

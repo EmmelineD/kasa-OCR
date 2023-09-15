@@ -1,8 +1,8 @@
 .ThumbContainer{
-    margin-top:7%;
     margin-left:7%;
     margin-right:7%;
-    margin-bottom:10%;
+    margin-top: 4%;
+    margin-bottom:4%;
     height:340px;
     position:relative;
     border-radius:10px;
@@ -47,6 +47,6 @@
     .ThumbContainer{
         margin-left:1%;
         margin-right:1%;
-        margin-bottom:5%;
+        margin-bottom:1%;
     }
 }

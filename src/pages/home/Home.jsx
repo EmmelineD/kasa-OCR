@@ -16,9 +16,9 @@ export default function Home() {
                     <div className ="ThumbList">
                         {/* Thumb element is created for each accommodation */}
                         {list.map(({id, cover, title}) => ( 
-                            <div key={id} > 
+                            <li key={id} > 
                                 <Thumb id = {id} cover = {cover} title = {title} /> 
-                            </div>  
+                            </li>  
                         ))}
                     </div>
                 </article>
