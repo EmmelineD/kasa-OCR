@@ -78,6 +78,11 @@
   margin-right: 6%;
 }
 
+.DropdownAccommodation{
+  height:100%;
+  width: 45%;
+}
+
 @media (max-width:767px){
   .accommodationContainerTop{
     margin-left: 5%;
@@ -111,5 +116,6 @@
 
   .accommodationDropdownContainer{
     flex-direction: column;
+    margin-left: 3%;
   }
 }

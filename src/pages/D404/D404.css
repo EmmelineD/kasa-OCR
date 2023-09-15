@@ -1,5 +1,8 @@
 .errorContainer {
-  margin: 64px 32px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .errorTitle{
@@ -29,11 +32,30 @@
     font-style: normal;
     font-size: 18px;
     font-weight: 500;
-    align-items: flex-end;
+    align-items:center;
     display: flex;
     justify-content: center;
     color: #FF6060;
     text-decoration-line: underline;
     line-height: 146.6%;
-    margin: 180px 0 160px 0;
+    margin-top: 8%;
+    margin-bottom: 10%;
+}
+
+@media (max-width :767px) {
+    .errorTitle{
+        margin-top: 20%;
+        font-size: 150px;
+    }
+
+    .errorText{
+        font-size: 22px;
+        margin-left: 10%;
+        margin-bottom: 50%;
+
+    }
+
+    .errorLink{
+        margin-bottom: 22%;
+    }
 }

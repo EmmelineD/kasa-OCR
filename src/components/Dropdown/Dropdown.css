@@ -1,6 +1,7 @@
 .Dropdown{
     height:100%;
-    width: 45%;
+    width: 100%;
+    margin: 2%;
 }
 
 .DropdownTitleOpen{

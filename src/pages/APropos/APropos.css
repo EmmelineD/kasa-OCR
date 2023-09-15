@@ -1,22 +1,20 @@
 .aPrposContainer{
-    max-width:100%;
-    display:flex;
-    flex-direction:column;
-    flex-grow:1;
-    justify-content: flex-start;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .aProposBackground{
-    height:225px;
+    width: 90%;
+    height: 223px;
     background-image: url('../../images/background2.png');
     background-size:cover;
     background-position:center;
     border-radius: 25px;
-    margin: 50px;
+    margin-top: 5%;
+    margin-left:6%;
 }
 
 .aProposDropdown{
-    width:80%;
+    width:70%;
     margin:0 auto;
 }
 
@@ -27,6 +25,13 @@
 
 @media (max-width:767px) {
     .aProposBackground{
-        margin:0 20px;
+        margin:20px;
+        min-height:110px;
+        max-height:150px;
     } 
+
+    .aProposDropdown{
+        margin-left: 4%;
+        width: 90%;
+    }
 }    
