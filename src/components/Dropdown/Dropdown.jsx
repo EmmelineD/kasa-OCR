@@ -11,7 +11,7 @@ export default function Dropdown({title,array}){
     }
 
     return(
-        <div className="DropdownContainer">
+        <div className="Dropdown">
             <div  onClick={handleClick} className={isOpen ?`${"DropdownTitleOpen"}`:`${"DropdownTitleClosed"}` }>
                 {title}
                 <img  src = {arrow} className={isOpen ?`${"ArrowUp"}`:`${"ArrowDown"}`}

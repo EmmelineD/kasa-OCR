@@ -21,8 +21,8 @@ export default function FicheLogement() {
                 <Carrousel key={accommodation.pictures} images={accommodation.pictures} />
                 <div className="accommodationContainerTop">
                     <div className="accommodationContainerTopLeft">
-                        <h1 className="accomodationTitle">{accommodation.title}</h1>
-                        <p className="accomodationLocation">{accommodation.location}</p>
+                        <h1 className="accommodationTitle">{accommodation.title}</h1>
+                        <p className="accommodationLocation">{accommodation.location}</p>
                         <Tag key={accommodation.tags} title="Tags" array={accommodation.tags}/>
                     </div>
                     <div className="accommodationContainerTopRight">
