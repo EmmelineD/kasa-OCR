@@ -42,7 +42,7 @@
   .slideContainer {
     margin: 27px 20px 15px 20px;
   }
-  img {
+  .slideImage {
     border-radius: 10px;
     height: 255px;
   }

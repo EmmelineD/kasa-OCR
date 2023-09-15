@@ -13,14 +13,14 @@ export default function Home() {
                     </div>
                 </div>
                 <article className ="HomeThumbContainer">
-                    <ul className ="ThumbList">
+                    <div className ="ThumbList">
                         {/* Thumb element is created for each accommodation */}
                         {list.map(({id, cover, title}) => ( 
-                            <li key={id} > 
+                            <div key={id} > 
                                 <Thumb id = {id} cover = {cover} title = {title} /> 
-                            </li>  
+                            </div>  
                         ))}
-                    </ul>
+                    </div>
                 </article>
             </main>
             

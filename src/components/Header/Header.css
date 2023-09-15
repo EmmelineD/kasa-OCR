@@ -5,7 +5,7 @@
     justify-content: space-between;
     margin-top:2%;
     margin-left: 5%;
-    margin-right: 5%;
+    margin-right: 3%;
 }
 
 .headerContainerLogo {
@@ -14,8 +14,9 @@
 }
 
 .headerContainerLinks {
+    width: 250px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 
 }
 
@@ -35,9 +36,13 @@
 
 @media (max-width:767px) {
     .headerContainerLogo {
-        width: 50%;
-        height: 50%;
-      }
+        width: 30%;
+        height: 30%;
+    }
+
+    .headerContainerLinks{
+        width:50%;
+    }
   }
   
   @media (max-width:350px) {
