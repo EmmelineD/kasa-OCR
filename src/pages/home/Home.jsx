@@ -15,7 +15,7 @@ export default function Home() {
                 <article className ="HomeThumbContainer">
                     <div className ="ThumbList">
                         {/* Thumb element is created for each accommodation */}
-                         <Thumb array={list} /> 
+                         <Thumb array={list}/> 
                     </div>
                 </article>
             </main>
