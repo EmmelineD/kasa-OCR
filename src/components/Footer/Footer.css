@@ -20,7 +20,7 @@
     margin-top:0px;
 }
 
-@media (max-width:350px) {
+@media (max-width:375px) {
  .footerImage{
     width:50%;
     height:50%;

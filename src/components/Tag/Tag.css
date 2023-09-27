@@ -22,7 +22,7 @@
     white-space: wrap;
 }
 
-@media (max-width:350px){
+@media (max-width:375px){
     .tags{
         flex-wrap: wrap;
     }

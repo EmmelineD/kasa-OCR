@@ -83,7 +83,7 @@
   width: 45%;
 }
 
-@media (max-width:767px){
+@media (max-width:375px){
   .accommodationContainerTop{
     margin-left: 5%;
     margin-right:5%;

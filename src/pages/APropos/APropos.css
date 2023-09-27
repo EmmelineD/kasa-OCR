@@ -23,7 +23,7 @@
     margin:0 auto; 
 }
 
-@media (max-width:767px) {
+@media (max-width:375px) {
     .aProposBackground{
         margin:20px;
         min-height:110px;

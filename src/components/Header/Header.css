@@ -34,7 +34,7 @@
     text-decoration-line: underline;
 }
 
-@media (max-width:350px) {
+@media (max-width:375px) {
 
     .headerContainer{
         align-items: flex-end;
