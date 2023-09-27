@@ -1,5 +1,4 @@
 import "./D404.css";
-import {Link} from 'react-router-dom';
 
 export default function D404() {
     return (

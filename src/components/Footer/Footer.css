@@ -20,13 +20,9 @@
     margin-top:0px;
 }
 
-@media (max-width:767px) {
+@media (max-width:350px) {
  .footerImage{
     width:50%;
     height:50%;
  }
-}
-
-@media (max-width:350px) {
-
 }

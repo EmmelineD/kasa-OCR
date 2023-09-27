@@ -10,7 +10,7 @@
     width: 100%;
 }
 
-@media (max-width:767px){
+@media (max-width:350px){
 
     .rating{
         justify-content: flex-start;

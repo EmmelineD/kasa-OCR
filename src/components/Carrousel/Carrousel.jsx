@@ -9,16 +9,16 @@ import arrowRight from '../../images/arrowRight.png';
 export default function Carrousel({images}) {
 
 
-   //Création des constantes pour définir le nombre d'images, et la navigation entre les images
+   //Creation of constants to define the number of images, and navigation between images
 
-   const [index, setIndex] = useState(0) //Constante avec un hook useState pour écouter les changements
-   const length = images.length //Constante pour avoir le nombre de logements
+   const [index, setIndex] = useState(0) //Constant with a useState hook to listen for changes
+   const length = images.length //Constant to have the number of dwellings
 
-   //Fonction pour passer à l'image suivante
+   //Function to move to the next image
    const nextSlide = () => {
        setIndex(index === length -1 ? 0 : index + 1)
    }
-   //Fonction pour passer à l'image précédente
+   //Function to switch to the previous image
    const previewSlide = () => {
        setIndex(index === 0 ? length -1 : index -1)
    }
