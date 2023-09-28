@@ -28,9 +28,6 @@
     margin:auto;
     padding: 5%;
     white-space: nowrap;
-}
-
-.headerContainerLink:hover {
     text-decoration-line: underline;
 }
 
