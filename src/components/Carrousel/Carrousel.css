@@ -3,6 +3,7 @@
   margin: 20px 100px 24px 100px;
   position: relative;
 }
+
 .slide {
   width: 100%;
   align-items: center;
@@ -10,26 +11,34 @@
   position: relative;
   justify-content: center;
 }
+
 .slideImage {
   height: 415px;
   width: 100%;
   object-fit: cover;
   border-radius: 25px;
 }
-.arrowLeft {
+
+.arrowLeftShow {
   position: absolute;
   cursor: pointer;
   width: 47px;
   height: 79px;
   left: 2%;
 }
-.arrowRight {
+
+.arrowRightShow {
   position: absolute;
   cursor: pointer;
   width: 47px;
   height: 79px;
   right: 2%;
 }
+
+.arrowHide {
+  display: none;
+}
+
 .indexInfo {
   position: absolute;
   font-size: 18px;
@@ -46,11 +55,11 @@
     border-radius: 10px;
     height: 255px;
   }
-  .arrowLeft {
+  .arrowLeftShow {
     width: 20px;
     height: 24px;
   }
-  .arrowRight {
+  .arrowRightShow {
     width: 20px;
     height: 24px;
   }

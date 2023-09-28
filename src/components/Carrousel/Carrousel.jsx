@@ -14,6 +14,9 @@ export default function Carrousel({images}) {
    const [index, setIndex] = useState(0) //Constant with a useState hook to listen for changes
    const length = images.length //Constant to have the number of dwellings
 
+   var imageCount = ""
+   var showArrows = false
+
    //Function to move to the next image
    const nextSlide = () => {
        setIndex(index === length -1 ? 0 : index + 1)
@@ -23,15 +26,20 @@ export default function Carrousel({images}) {
        setIndex(index === 0 ? length -1 : index -1)
    }
 
+    if (images.length > 1) {
+        imageCount=((index + 1)+"/"+images.length );
+        showArrows = true
+    }
+
    return (
        <section className="slideContainer">
            <div className="slide">
                <img className="slideImage" src={images[index]} alt={images.title} key={images.id} />
-                   <img className="arrowLeft" src={arrowLeft} onClick={previewSlide} alt="Left Arrow" />
-                   <img className="arrowRight" src={arrowRight} onClick={nextSlide} alt="Right Arrow" />
+                   <img src = {arrowLeft} onClick={previewSlide} className={showArrows ?`${"arrowLeftShow"}`:`${"arrowHide"}`} alt="Left Arrow" />
+                   <img src={arrowRight} onClick={nextSlide} className={showArrows ?`${"arrowRightShow"}`:`${"arrowHide"}`}alt="Right Arrow" />
            </div>
                <div className="indexInfo">
-                   {index + 1}/{images.length}
+                    {imageCount}
                </div>
        </section>
    );
